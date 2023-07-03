@@ -266,7 +266,7 @@
     <div class="form-row">
         <div class="form-group col-md-12">
             <label for="inputEmail4">Business Profile<span class="text-danger">*</span></label>
-            <textarea name="business_profile" class="tinymce-editor"></textarea>
+            <textarea name="business_profile" class="form-control"></textarea>
             <span id="business_profile-error" class="error text-danger"
             for="input-business_profile">{{ $errors->first('business_profile') }}</span>
         </div>
