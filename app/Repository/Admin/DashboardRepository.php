@@ -17,14 +17,14 @@ class DashboardRepository implements DashboardInterface
        $distCount = Distributor::count('*');
        //today count
        $date  = Carbon::now()->format('Y-m-d');
-       $distTCount = Distributor::where('created_at', $date)->count('created_at');
-       $franTCount = Franchise::where('created_at', $date)->count('created_at');
-       $saleTCount = Sale::where('created_at', $date)->count('created_at');
+       $distTCount = Distributor::whereDate('created_at', $date)->count('created_at');
+       $franTCount = Franchise::whereDate('created_at', $date)->count('created_at');
+       $saleTCount = Sale::whereDate('created_at', $date)->count('created_at');
        //yesterday
        $yesterday  = Carbon::yesterday()->format('Y-m-d');
-       $distYCount = Distributor::where('created_at', $date)->count('created_at');
-       $franYCount = Franchise::where('created_at', $date)->count('created_at');
-       $saleYCount = Sale::where('created_at', $date)->count('created_at');
+       $distYCount = Distributor::whereDate('created_at', $date)->count('created_at');
+       $franYCount = Franchise::whereDate('created_at', $date)->count('created_at');
+       $saleYCount = Sale::whereDate('created_at', $date)->count('created_at');
 
 
        $dists     = Distributor::latest()->take(5)->orderBy("created_at","desc")->get();

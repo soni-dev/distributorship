@@ -142,22 +142,22 @@
                                                     aria-labelledby="pills-first-tab">
                                                     <div class="p-3">
                                                         <h2>Distributors</h2>
-                                                        <p class="text-muted">{{$counts['distTCount']}}</p>
+                                                        <h2 class="text-muted">{{$counts['distTCount']}}</h2>
                                                         <h2>Franchisee</h2>
-                                                        <p class="text-muted">{{$counts['franTCount']}}</p>
+                                                        <h2 class="text-muted">{{$counts['franTCount']}}</h2>
                                                         <h2>Sales Agent</h2>
-                                                        <p class="text-muted">{{$counts['saleTCount']}}</p>
+                                                        <h2 class="text-muted">{{$counts['saleTCount']}}</h2>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="pills-second" role="tabpanel"
                                                     aria-labelledby="pills-second-tab">
                                                     <div class="p-3">
                                                         <h2>Distributors</h2>
-                                                        <p class="text-muted">{{$counts['distYCount']}}</p>
+                                                        <h2 class="text-muted">{{$counts['distYCount']}}</h2>
                                                         <h2>Franchisee</h2>
-                                                        <p class="text-muted">{{$counts['franYCount']}}</p>
+                                                        <h2 class="text-muted">{{$counts['franYCount']}}</h2>
                                                         <h2>Sales Agent</h2>
-                                                        <p class="text-muted">{{$counts['saleYCount']}}</p>
+                                                        <h2 class="text-muted">{{$counts['saleYCount']}}</h2>
                                                     </div>
                                                 </div>
                                             </div>
